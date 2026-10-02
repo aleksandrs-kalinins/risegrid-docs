@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>RiseGrid – Privacy Policy and Support</title>
+<meta name="description" content="Privacy policy and support for RiseGrid, a falling-blocks puzzle game for iPhone and iPad.">
+<style>
+  :root {
+    --bg: #101114;
+    --text: #f2f2f4;
+    --muted: #a3a6ad;
+    --line: #2a2c33;
+    --link: #5fd4e6;
+  }
+  @media (prefers-color-scheme: light) {
+    :root {
+      --bg: #f6f6f8;
+      --text: #14151a;
+      --muted: #5b5e66;
+      --line: #dcdde2;
+      --link: #0b6f82;
+    }
+  }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; }
+  body {
+    background: var(--bg);
+    color: var(--text);
+    font: 17px/1.6 "Avenir Next", "Segoe UI", system-ui, -apple-system, sans-serif;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 24px;
+  }
+  main { width: 100%; max-width: 480px; }
+
+  /* A small cluster of blocks in the game's piece colours */
+  .blocks {
+    display: grid;
+    grid-template-columns: repeat(3, 20px);
+    grid-auto-rows: 20px;
+    gap: 3px;
+    margin-bottom: 24px;
+  }
+  .blocks i { display: block; border-radius: 3px; }
+  .c { background: #22c7dd; }
+  .p { background: #8e5bd4; }
+  .o { background: #f29a2e; }
+  .g { background: #3fb950; }
+
+  h1 { margin: 0 0 4px; font-size: 2rem; line-height: 1.2; }
+  .lede { margin: 0 0 32px; color: var(--muted); }
+
+  nav a {
+    display: block;
+    padding: 16px 0;
+    border-top: 1px solid var(--line);
+    color: var(--link);
+    text-decoration: none;
+    font-weight: 600;
+  }
+  nav a:last-child { border-bottom: 1px solid var(--line); }
+  nav a span { display: block; margin-top: 2px; color: var(--muted); font-weight: 400; font-size: 0.9rem; }
+  nav a:hover { text-decoration: underline; }
+  nav a:focus-visible { outline: 2px solid var(--link); outline-offset: 4px; }
+</style>
+</head>
+<body>
+<main>
+  <div class="blocks" aria-hidden="true">
+    <i class="c"></i><i></i><i></i>
+    <i class="c"></i><i class="p"></i><i class="o"></i>
+    <i class="g"></i><i class="p"></i><i class="o"></i>
+  </div>
+
+  <h1>RiseGrid</h1>
+  <p class="lede">Privacy and support information for the RiseGrid app.</p>
+
+  <nav>
+    <a href="risegrid-privacy-policy.html">Privacy Policy
+      <span>What the app stores and what it does not collect.</span>
+    </a>
+    <a href="risegrid-support.html">Support
+      <span>Help with the game and how to get in touch.</span>
+    </a>
+  </nav>
+</main>
+</body>
+</html>

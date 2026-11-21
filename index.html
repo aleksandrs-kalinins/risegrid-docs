@@ -4,7 +4,9 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>RiseGrid – Privacy Policy and Support</title>
-<meta name="description" content="Privacy policy and support for RiseGrid, a falling-blocks puzzle game for iPhone and iPad.">
+<link rel="icon" type="image/png" href="favicon.png">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<meta name="description" content="Privacy policy and support for RiseGrid, an upside-down block puzzle game for iPhone and iPad where the pieces rise.">
 <style>
   :root {
     --bg: #101114;
@@ -36,20 +38,6 @@
   }
   main { width: 100%; max-width: 480px; }
 
-  /* A small cluster of blocks in the game's piece colours */
-  .blocks {
-    display: grid;
-    grid-template-columns: repeat(3, 20px);
-    grid-auto-rows: 20px;
-    gap: 3px;
-    margin-bottom: 24px;
-  }
-  .blocks i { display: block; border-radius: 3px; }
-  .c { background: #22c7dd; }
-  .p { background: #8e5bd4; }
-  .o { background: #f29a2e; }
-  .g { background: #3fb950; }
-
   h1 { margin: 0 0 4px; font-size: 2rem; line-height: 1.2; }
   .lede { margin: 0 0 32px; color: var(--muted); }
 
@@ -65,15 +53,12 @@
   nav a span { display: block; margin-top: 2px; color: var(--muted); font-weight: 400; font-size: 0.9rem; }
   nav a:hover { text-decoration: underline; }
   nav a:focus-visible { outline: 2px solid var(--link); outline-offset: 4px; }
+  .app-icon { display: block; width: 72px; height: 72px; border-radius: 22.5%; margin-bottom: 24px; }
 </style>
 </head>
 <body>
 <main>
-  <div class="blocks" aria-hidden="true">
-    <i class="c"></i><i></i><i></i>
-    <i class="c"></i><i class="p"></i><i class="o"></i>
-    <i class="g"></i><i class="p"></i><i class="o"></i>
-  </div>
+  <img class="app-icon" src="risegrid-icon.png" width="72" height="72" alt="">
 
   <h1>RiseGrid</h1>
   <p class="lede">Privacy and support information for the RiseGrid app.</p>

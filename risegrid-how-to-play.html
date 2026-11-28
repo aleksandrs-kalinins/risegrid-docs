@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>How to Play RiseGrid – Rules, Controls and Scoring</title>
+<meta name="description" content="The official rules of RiseGrid, the upside-down block puzzle for iPhone and iPad where pieces rise instead of fall. Controls, hold piece, scoring, game over and Zen mode.">
+<link rel="canonical" href="https://aleksandrs-kalinins.github.io/risegrid-docs/risegrid-how-to-play.html">
+<meta property="og:type" content="article">
+<meta property="og:title" content="How to Play RiseGrid – Rules, Controls and Scoring">
+<meta property="og:description" content="Pieces rise from the bottom and stack at the top. Learn the controls, the hold piece, scoring and Zen mode.">
+<meta property="og:url" content="https://aleksandrs-kalinins.github.io/risegrid-docs/risegrid-how-to-play.html">
+<meta property="og:image" content="https://aleksandrs-kalinins.github.io/risegrid-docs/risegrid-icon.png">
+<link rel="icon" type="image/png" href="favicon.png">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<style>
+  :root {
+    --bg: #101114;
+    --text: #f2f2f4;
+    --muted: #a3a6ad;
+    --line: #2a2c33;
+    --link: #5fd4e6;
+  }
+  @media (prefers-color-scheme: light) {
+    :root {
+      --bg: #f6f6f8;
+      --text: #14151a;
+      --muted: #5b5e66;
+      --line: #dcdde2;
+      --link: #0b6f82;
+    }
+  }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; }
+  body {
+    background: var(--bg);
+    color: var(--text);
+    font: 17px/1.6 "Avenir Next", "Segoe UI", system-ui, -apple-system, sans-serif;
+    padding: 32px 24px 56px;
+  }
+  main { width: 100%; max-width: 640px; margin: 0 auto; }
+
+  .home { display: inline-flex; align-items: center; gap: 12px; margin-bottom: 32px; color: var(--text); text-decoration: none; font-weight: 600; }
+
+  h1 { margin: 0 0 4px; font-size: 2rem; line-height: 1.2; }
+  h2 { margin: 36px 0 8px; font-size: 1.3rem; line-height: 1.3; }
+  h3 { margin: 24px 0 4px; font-size: 1.05rem; }
+  p, ul, table { margin: 0 0 14px; }
+  ul { padding-left: 22px; }
+  li { margin-bottom: 6px; }
+  .meta { color: var(--muted); }
+  a { color: var(--link); }
+  a:hover { text-decoration: none; }
+  a:focus-visible { outline: 2px solid var(--link); outline-offset: 3px; }
+  .home:focus-visible { outline-offset: 6px; }
+  table { border-collapse: collapse; width: 100%; }
+  th, td { text-align: left; padding: 8px 12px 8px 0; border-bottom: 1px solid var(--line); vertical-align: top; }
+  th { font-weight: 600; }
+  td.num { font-variant-numeric: tabular-nums; }
+  footer { margin-top: 40px; padding-top: 16px; border-top: 1px solid var(--line); }
+  .app-icon { display: block; width: 32px; height: 32px; border-radius: 22.5%; }
+</style>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What are the rules of RiseGrid?",
+      "acceptedAnswer": { "@type": "Answer", "text": "RiseGrid is an upside-down block puzzle. Pieces enter at the bottom of a 10 by 20 board and rise until they hit the top or the stack. Fill a whole row to clear it; the blocks below it move up. The game ends when a new piece has no room to enter at the bottom." }
+    },
+    {
+      "@type": "Question",
+      "name": "What are the controls in RiseGrid?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Drag sideways to move the piece, tap the board to rotate it, swipe up to launch it straight to its stopping place, and swipe down or tap the HOLD slot to put it on hold." }
+    },
+    {
+      "@type": "Question",
+      "name": "How is the score counted in RiseGrid?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Every piece you place scores 10 points. Clearing rows with one piece scores 100 points for 1 row, 300 for 2 rows, 500 for 3 rows and 800 for 4 rows." }
+    },
+    {
+      "@type": "Question",
+      "name": "What is Zen mode in RiseGrid?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Zen mode is a relaxed way to play with no score and no game over. When the board is full, the top six rows clear quietly. Zen games are kept out of the best score and the Top 10." }
+    }
+  ]
+}
+</script>
+</head>
+<body>
+<main>
+<a class="home" href="index.html">
+  <img class="app-icon" src="risegrid-icon.png" width="32" height="32" alt="">
+  RiseGrid
+</a>
+
+<h1>How to play RiseGrid</h1>
+<p class="meta">The rules, controls and scoring of RiseGrid for iPhone and iPad (version 1.3).</p>
+
+<p>RiseGrid is a block puzzle turned upside down. Instead of falling, the pieces <strong>rise</strong> from the bottom of the board and stack up at the top. Fit them together, fill whole rows to clear them, and keep the stack from growing all the way down.</p>
+
+<h2>The basics</h2>
+<ul>
+  <li>The board is <strong>10 columns wide and 20 rows tall</strong>.</li>
+  <li>Each new piece enters at the bottom centre of the board and rises <strong>one row per second</strong>. The speed stays the same for the whole game.</li>
+  <li>A piece stops when it reaches the top of the board or touches a block above it. After a short moment (half a second) it locks in place and the next piece enters.</li>
+  <li>When a row is completely filled, it clears. Everything below the cleared row moves up to close the gap.</li>
+  <li>A faint outline, the ghost piece, shows where the active piece will stop.</li>
+  <li>The preview to the right of the board shows which piece comes next.</li>
+</ul>
+
+<h2>Controls</h2>
+<table>
+  <thead>
+    <tr><th scope="col">Gesture</th><th scope="col">What it does</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>Drag left or right</td><td>Moves the piece sideways, one column for each short step of your finger.</td></tr>
+    <tr><td>Tap the board</td><td>Rotates the piece. You can tap anywhere on the board.</td></tr>
+    <tr><td>Swipe up</td><td>Launches the piece straight to where the ghost piece shows. It locks after the usual short moment.</td></tr>
+    <tr><td>Swipe down, or tap the HOLD slot</td><td>Puts the piece on hold (see below).</td></tr>
+    <tr><td>Pause button (top right)</td><td>Pauses the game and opens the menu with Settings.</td></tr>
+  </tbody>
+</table>
+<p>A piece that has stopped can still be moved or rotated to slide it into place. Each move restarts the short locking moment, but only <strong>15 times per piece</strong>: after that, the piece locks however fast you keep tapping.</p>
+
+<h2>The pieces</h2>
+<p>RiseGrid uses the seven classic four-block shapes (I, O, T, L, J, S and Z) plus two special pieces that turn up less often: a five-block <strong>plus</strong> (a cross) and a <strong>single block</strong>. The O, the plus and the single block don't rotate.</p>
+
+<h2>Hold piece</h2>
+<ul>
+  <li>Swipe down, or tap the <strong>HOLD</strong> slot to the left of the board, to keep the current piece for later.</li>
+  <li>If the slot was empty, the next piece comes into play. If a piece was already held, the two swap. The piece that comes out starts again from the bottom.</li>
+  <li>You can hold <strong>once per piece</strong>: a piece that has just come out of the slot can't go straight back in. The slot looks dimmed while holding isn't allowed.</li>
+  <li>The held piece is kept when your game is saved.</li>
+</ul>
+
+<h2>Scoring</h2>
+<p>Every piece you place scores <strong>10 points</strong>. Clearing several rows with one piece pays more than clearing them one at a time:</p>
+<table>
+  <thead>
+    <tr><th scope="col">Rows cleared with one piece</th><th scope="col">Points</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>1 row</td><td class="num">100</td></tr>
+    <tr><td>2 rows</td><td class="num">300</td></tr>
+    <tr><td>3 rows</td><td class="num">500</td></tr>
+    <tr><td>4 rows</td><td class="num">800</td></tr>
+  </tbody>
+</table>
+<p>The points for a clear pop up on the board. Your score, your best score and the play time are shown on screen while you play.</p>
+
+<h2>Game over</h2>
+<p>The game ends when the stack has grown so far down that a new piece has no room to enter at the bottom. The game-over screen shows your score and your place in the Top 10, or how many more points you needed to get in. Tap restart to play again.</p>
+<p>RiseGrid keeps your <strong>best score</strong>, a <strong>Top 10</strong> list and your most recent runs on your device.</p>
+
+<h2>Zen mode</h2>
+<p>Zen mode is a relaxed way to play. Turn it on in <strong>Pause &rarr; Settings &rarr; Zen mode</strong>.</p>
+<ul>
+  <li>There is <strong>no game over</strong>: when a new piece has no room, the top six rows clear quietly and everything below moves up.</li>
+  <li>There are <strong>no points</strong>. The score display shows &ldquo;Zen mode&rdquo; instead.</li>
+  <li>A game that used Zen mode at any point doesn't count towards your best score or the Top 10, even if you switch Zen mode off before it ends.</li>
+</ul>
+
+<h2>Modes and themes</h2>
+<p>The rules are the same in every mode; only the look changes. Pick a mode in <strong>Pause &rarr; Settings</strong>:</p>
+<ul>
+  <li><strong>Classic</strong>: plain blocks.</li>
+  <li><strong>Fun</strong>: animated themes, <strong>Glow</strong>, <strong>Balloons</strong>, <strong>Station</strong> and <strong>Stars</strong>, with optional pushers (flames, propeller, cars, a monster truck, a bulldozer, a fire engine and more) that lift the piece as it rises.</li>
+</ul>
+
+<h2>Tutorial</h2>
+<p>Your first game starts with a short guided tutorial that shows each gesture on the real board (move, rotate, launch and hold) and waits until you try it. You can skip it and replay it any time from <strong>Pause &rarr; Settings &rarr; How to play</strong>.</p>
+
+<h2>Saving your game</h2>
+<p>Your game in progress is saved on your device. Close the app and it picks up where you left off.</p>
+
+<p>Something not covered here? See <a href="risegrid-support.html">Support</a> or email <a href="mailto:a63labs@proton.me">a63labs@proton.me</a>.</p>
+
+<footer class="meta">&copy; 2026 Aleksandrs Kalinins &middot; <a href="risegrid-support.html">Support</a> &middot; <a href="risegrid-privacy-policy.html">Privacy Policy</a></footer>
+</main>
+</body>
+</html>

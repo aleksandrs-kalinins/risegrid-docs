@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>How to Play RiseGrid – Rules, Controls and Scoring</title>
-<meta name="description" content="The official rules of RiseGrid, the upside-down block puzzle for iPhone and iPad where pieces rise instead of fall. Controls, hold piece, scoring, game over and Zen mode.">
+<meta name="description" content="The official rules of RiseGrid, the upside-down block puzzle for iPhone and iPad where pieces rise instead of fall. Controls, hold piece, scoring and combos, game over and Zen mode.">
 <link rel="canonical" href="https://aleksandrs-kalinins.github.io/risegrid-docs/risegrid-how-to-play.html">
 <meta property="og:type" content="article">
 <meta property="og:title" content="How to Play RiseGrid – Rules, Controls and Scoring">
@@ -78,7 +78,12 @@
     {
       "@type": "Question",
       "name": "How is the score counted in RiseGrid?",
-      "acceptedAnswer": { "@type": "Answer", "text": "Every piece you place scores 10 points. Clearing rows with one piece scores 100 points for 1 row, 300 for 2 rows, 500 for 3 rows and 800 for 4 rows." }
+      "acceptedAnswer": { "@type": "Answer", "text": "Every piece you place scores 10 points. Clearing rows with one piece scores 100 points for 1 row, 300 for 2 rows, 500 for 3 rows and 800 for 4 rows. Clearing rows with back-to-back pieces builds a combo that multiplies the row points by x2, x3 and so on, up to x5. A piece that clears nothing resets the combo." }
+    },
+    {
+      "@type": "Question",
+      "name": "How do combos work in RiseGrid?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Each piece that clears at least one row adds 1 to your combo; a piece that settles without clearing a row resets it. The row-clear points are multiplied by the combo: x1 for the first clear, x2 for the second back-to-back clear, x3 for the third, up to x5. The 10 points for placing a piece are never multiplied. Holding a piece doesn't affect the combo." }
     },
     {
       "@type": "Question",
@@ -137,7 +142,7 @@
   <li>The held piece is kept when your game is saved.</li>
 </ul>
 
-<h2>Scoring</h2>
+<h2 id="scoring">Scoring</h2>
 <p>Every piece you place scores <strong>10 points</strong>. Clearing several rows with one piece pays more than clearing them one at a time:</p>
 <table>
   <thead>
@@ -150,7 +155,16 @@
     <tr><td>4 rows</td><td class="num">800</td></tr>
   </tbody>
 </table>
-<p>The points for a clear pop up on the board. Your score, your best score and the play time are shown on screen while you play.</p>
+<h3>Combos</h3>
+<p>Clear rows with back-to-back pieces to build a <strong>combo</strong>. The row points above are multiplied by your combo:</p>
+<ul>
+  <li>Each piece that clears at least one row adds 1 to the combo: the first clear counts x1, the second back-to-back clear x2, the third x3, and so on up to <strong>x5</strong>.</li>
+  <li>A piece that settles without clearing a row resets the combo.</li>
+  <li>Putting a piece on hold doesn't affect the combo.</li>
+  <li>The 10 points for placing a piece are never multiplied.</li>
+</ul>
+<p>For example, three single-row clears in a row score 110, 210 and 310 points (10 for the piece plus 100 &times; 1, 2 and 3).</p>
+<p>The points for a clear pop up on the board, with a yellow <strong>COMBO x2</strong> (x3, x4 &hellip;) line under them from the second back-to-back clear on. Your score, your best score and the play time are shown on screen while you play.</p>
 
 <h2>Game over</h2>
 <p>The game ends when the stack has grown so far down that a new piece has no room to enter at the bottom. The game-over screen shows your score and your place in the Top 10, or how many more points you needed to get in. Tap restart to play again.</p>
@@ -160,7 +174,7 @@
 <p>Zen mode is a relaxed way to play. Turn it on in <strong>Pause &rarr; Settings &rarr; Zen mode</strong>.</p>
 <ul>
   <li>There is <strong>no game over</strong>: when a new piece has no room, the top six rows clear quietly and everything below moves up.</li>
-  <li>There are <strong>no points</strong>. The score display shows &ldquo;Zen mode&rdquo; instead.</li>
+  <li>There are <strong>no points</strong> and no combos. The score display shows &ldquo;Zen mode&rdquo; instead.</li>
   <li>A game that used Zen mode at any point doesn't count towards your best score or the Top 10, even if you switch Zen mode off before it ends.</li>
 </ul>
 
@@ -172,7 +186,7 @@
 </ul>
 
 <h2>Tutorial</h2>
-<p>Your first game starts with a short guided tutorial that shows each gesture on the real board (move, rotate, launch and hold) and waits until you try it. You can skip it and replay it any time from <strong>Pause &rarr; Settings &rarr; How to play</strong>.</p>
+<p>Your first game starts with a short guided tutorial that shows each gesture on the real board (move, rotate, launch and hold) and waits until you try it. You can skip it. The same rules are in the app under <strong>Pause &rarr; How to play</strong> (also in Settings), where you can replay the tutorial at any time.</p>
 
 <h2>Saving your game</h2>
 <p>Your game in progress is saved on your device. Close the app and it picks up where you left off.</p>
